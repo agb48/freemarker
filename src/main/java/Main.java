@@ -22,13 +22,13 @@ public class Main {
 
       FileTemplateLoader templateLoader =
           new FileTemplateLoader(
-              new File("/Users/germanbarros/IdeaProjects/sss/src/main/resources"));
+              new File("C:\\Users\\t_germanb1\\git_repositories\\freemarker\\src\\main\\resources"));
       configuration.setTemplateLoader(templateLoader);
 
       Template template = configuration.getTemplate("class.ftl");
 
       // Build the data-model
-      Map<String, Object> data = new HashMap<>();
+      Map<String, Object> data = new HashMap();
 
       Generator.Builder generatorBuilder = fillMainClassData();
       appendAssignedFields(generatorBuilder);
